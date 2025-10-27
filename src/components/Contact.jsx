@@ -21,7 +21,7 @@ const Contact = () => {
                 download="Andrew_Demers_Resume.pdf" 
                 className="contact-link"
               >
-                Download Resume
+                Resume
               </a>
             </div>
             {contacts.map((contact, index) => (
