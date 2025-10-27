@@ -6,7 +6,7 @@ const About = () => {
         <div className="about-content">
           <p className="about-text">
             I am a dedicated professional at the intersection of machine learning and product management, 
-            driven by a passion for building innovative, data-driven solutions that deliver meaningful impact. 
+            driven by a passion for building innovative, data-informed solutions that deliver meaningful impact. 
             With a strong foundation in developing and deploying machine learning models, combined with strategic 
             product management expertise, I excel at transforming complex technical concepts into scalable, user-centric products.
           </p>
@@ -37,7 +37,7 @@ const About = () => {
         
             <div className="skill-item">
               <span className="skill-icon">📊</span>
-              <h3>Data-Driven Decisions</h3>
+              <h3>Data-Informed Decisions</h3>
               <p>Leveraging analytics to drive measurable results</p>
             </div>
           </div>
