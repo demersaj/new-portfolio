@@ -29,6 +29,7 @@ const Navbar = () => {
         <ul className="nav-menu">
           <li><a href="#about" className="nav-link" onClick={(e) => scrollToSection(e, '#about')}>About</a></li>
           <li><a href="#experience" className="nav-link" onClick={(e) => scrollToSection(e, '#experience')}>Experience</a></li>
+          <li><a href="#skills" className="nav-link" onClick={(e) => scrollToSection(e, '#skills')}>Skills</a></li>
           <li><a href="#education" className="nav-link" onClick={(e) => scrollToSection(e, '#education')}>Education</a></li>
           <li><a href="#certifications" className="nav-link" onClick={(e) => scrollToSection(e, '#certifications')}>Certifications</a></li>
           <li><a href="#contact" className="nav-link" onClick={(e) => scrollToSection(e, '#contact')}>Contact</a></li>

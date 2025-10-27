@@ -590,6 +590,153 @@ body {
     line-height: 1.7;
 }
 
+/* Section Subtitle */
+.section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+    font-weight: 400;
+}
+
+/* Skills Section */
+.skills-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-categories.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-category {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-category-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+}
+
+.skill-category-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 8px rgba(129, 140, 248, 0.3));
+}
+
+.skill-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, rgba(129, 140, 248, 0.1), rgba(167, 139, 250, 0.05));
+    backdrop-filter: blur(20px);
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    animation: fadeInBadge 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: calc(0.1s + var(--delay));
+}
+
+@keyframes fadeInBadge {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.skill-badge-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 2rem;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--skill-color, rgba(129, 140, 248, 0.4)), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skill-badge:hover .skill-badge-glow {
+    opacity: 0.6;
+}
+
+.skill-badge:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 
+                0 0 30px rgba(129, 140, 248, 0.3),
+                0 0 60px rgba(167, 139, 250, 0.2);
+    border-color: rgba(129, 140, 248, 0.6);
+    background: linear-gradient(135deg, rgba(129, 140, 248, 0.15), rgba(167, 139, 250, 0.1));
+}
+
+.magnetic-card {
+    will-change: transform;
+}
+
+.badge-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+    transition: transform 0.3s;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.skill-badge:hover .badge-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.badge-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 1;
+}
+
+/* Add magnetic effect on hover for skill badges */
+@media (hover: hover) {
+    .magnetic-card {
+        transition: transform 0.15s ease-out;
+    }
+}
+
 /* Certifications Grid */
 .certifications-grid {
     display: grid;
@@ -787,6 +934,22 @@ body {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skill-category-title {
+        font-size: 1.5rem;
+    }
+
+    .skill-category-icon {
+        font-size: 1.5rem;
+    }
+
+    .skill-badge-container {
+        justify-content: center;
+    }
+
+    .skills-categories {
+        gap: 3rem;
     }
 
     .section-title {
