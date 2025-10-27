@@ -8,9 +8,9 @@ const Experience = () => {
     },
     {
       title: 'Software Project Manager',
-      company: 'AI/ML SaaS Company',
+      company: 'Apptronik',
       date: '2020 - 2022',
-      description: 'Led the end-to-end delivery of software for a general-purpose, humanoid robot, managing project plans to ensure on-time and on-budget execution. I also act as the key bridge between engineering teams, aligning software development with hardware delivery to ensure successful integration.'
+      description: 'Led the end-to-end delivery of AI/ML software for a general-purpose, humanoid robot, managing project plans to ensure on-time and on-budget execution. I also act as the key bridge between engineering teams, aligning software development with hardware delivery to ensure successful integration.'
     },
     {
       title: 'Associate Product Manager - Computer Vision',
