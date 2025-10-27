@@ -25,7 +25,7 @@ const Hero = () => {
           <span className="gradient-text">AI Product Manager</span>
         </h1>
         <p className="hero-subtitle">
-          Building innovative, data-driven solutions at the intersection of machine learning and product management
+          Building innovative, data-informed solutions at the intersection of machine learning and product management
         </p>
         <div className="hero-buttons">
           <a href="#contact" className="btn btn-primary" onClick={(e) => scrollToSection(e, '#contact')}>
