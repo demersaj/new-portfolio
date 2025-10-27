@@ -3,19 +3,19 @@ const Certifications = () => {
     {
       name: 'Cognitive Project Management for AI (CPMAI)+ PLUS',
       issuer: 'Project Management Institute',
-      date: '06/2025',
+      date: 'June 2025',
       icon: '🧠'
     },
     {
       name: 'Certified Scrum Product Owner (CSPO)',
       issuer: 'Scrum Alliance',
-      date: '06/2022',
+      date: 'June 2022',
       icon: '🎯'
     },
     {
       name: 'Project Management Professional (PMP)',
       issuer: 'Project Management Institute',
-      date: '04/2022',
+      date: 'April 2022',
       icon: '📋'
     }
   ]
