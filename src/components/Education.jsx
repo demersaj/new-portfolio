@@ -1,6 +1,13 @@
 const Education = () => {
   const educations = [
     {
+      icon: '🧠',
+      degree: 'M.S. in Artificial Intelligence',
+      school: 'University of Colorado Boulder',
+      year: '2027 (expected)',
+      details: 'Deep, specialized dive into the theory and application of modern AI.'
+    },
+    {
       icon: '🎓',
       degree: 'Master of Business Administration',
       school: 'Louisiana State University Shreveport',
@@ -9,14 +16,14 @@ const Education = () => {
     },
     {
       icon: '📚',
-      degree: 'B.S. Computer Science',
+      degree: 'B.S. in Computer Science',
       school: 'Oregon State University',
       year: '2019',
       details: 'Focus on data structures, algorithms, and software engineering.'
     },
     {
       icon: '📜',
-      degree: 'Bachelor of Science in Mechanical Engineering',
+      degree: 'B.S.in Mechanical Engineering',
       school: 'James Madison University',
       year: '2015',
       details: 'Business minor with a focus on mechanical engineering.'
